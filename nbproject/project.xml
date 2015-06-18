@@ -6,7 +6,6 @@
             <name>Mega Senha</name>
             <source-roots>
                 <root id="src.src.dir"/>
-                <root id="src.lib.dir"/>
             </source-roots>
             <test-roots/>
         </data>
