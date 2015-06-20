@@ -10,7 +10,7 @@ public class Aposta {
 
     public Aposta(Pessoa pessoa, ArrayList<Integer> apostas) {
         this.pessoa = pessoa;
-        this.apostas = apostas;
+        this.setApostas(apostas);
     }
 
     public Pessoa getPessoa() {
@@ -26,6 +26,10 @@ public class Aposta {
     }
 
     public void setApostas(ArrayList<Integer> apostas) {
+        if ((apostas.size() < 6) || (apostas.size() > 10)) {
+            System.err.println("Número inválido de dezenas: "+apostas.size());
+            System.exit(1);
+        }
         this.apostas = apostas;
     }
     

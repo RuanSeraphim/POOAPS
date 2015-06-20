@@ -19,30 +19,14 @@ public class Cadastro extends Leitor {
         return pessoas;
     }
     
-    private void validaDocumento(String documento) {
-        char[] documento_char = documento.toCharArray();
-        if (documento_char.length < 11) {
-                System.err.println("CPF com tamanho inválido: "+documento);
-                System.exit(1);
-        }
-        for (char c : documento_char) {
-            if (!Character.isDigit(c)) {
-                System.err.println("CPF com caracteres inválidos: "+documento);
-                System.exit(1);
-            }
-        }
-    }
-    
     @Override
     protected void interpretaLinha(String linha) {
+        System.out.println(linha);
         boolean pessoa_existe = false;        
         Pattern p = Pattern.compile("^(^\\S*)\\s(.*)");
         Matcher m = p.matcher(linha);
         if (m.find()) {
-            String nome = m.group(2);
-            String documento = m.group(1);
-            this.validaDocumento(documento);
-            Pessoa nova_pessoa = new Pessoa(nome, documento);
+            Pessoa nova_pessoa = new Pessoa(m.group(2), m.group(1));
             for (Pessoa pessoa : this.pessoas) {
                 if (pessoa.getDocumento().equals(nova_pessoa.getDocumento())) {
                     pessoa_existe = true;
