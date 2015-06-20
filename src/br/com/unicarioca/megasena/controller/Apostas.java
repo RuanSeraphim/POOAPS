@@ -1,6 +1,5 @@
 package br.com.unicarioca.megasena.controller;
 
-import br.com.unicarioca.megasena.controller.abstracao.Leitor;
 import br.com.unicarioca.megasena.exception.PessoaNaoEncontradaException;
 import br.com.unicarioca.megasena.model.Aposta;
 import br.com.unicarioca.megasena.model.Pessoa;

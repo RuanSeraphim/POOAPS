@@ -1,4 +1,4 @@
-package br.com.unicarioca.megasena.controller.abstracao;
+package br.com.unicarioca.megasena.controller;
 
 import java.io.*;
 
