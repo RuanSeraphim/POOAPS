@@ -1,10 +1,12 @@
-package br.com.unicarioca.megasena;
+package br.com.unicarioca.megasena.controller;
+
+import java.io.*;
 
 public class Apostas {
     
     private Cadastro cadastro;
     
-    public Apostas(String filename, Cadastro cadastro) {
+    public Apostas(String nome_arquivo, Cadastro cadastro) {
         this.cadastro = cadastro;
     }
     

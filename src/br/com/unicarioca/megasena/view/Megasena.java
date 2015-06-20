@@ -1,6 +1,6 @@
-package br.com.unicarioca.megasena;
+package br.com.unicarioca.megasena.view;
 
-import java.io.*;
+import br.com.unicarioca.megasena.controller.*;
 
 /**
  * Trabalho de APS de Conceitos de Orientação a Objetos. 
@@ -15,7 +15,7 @@ import java.io.*;
  */
 public class Megasena {
     
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) {
         
         Cadastro cadastro = new Cadastro("cadastro.txt");
         Apostas apostas = new Apostas("apostas.txt", cadastro);

@@ -1,4 +1,4 @@
-package br.com.unicarioca.megasena;
+package br.com.unicarioca.megasena.controller;
 
 public class Sorteio {
     
