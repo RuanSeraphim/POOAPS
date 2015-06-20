@@ -2,9 +2,9 @@ package br.com.unicarioca.megasena.controller;
 
 import java.util.regex.*;
 
-public class Sorteio extends Leitor {
+public class SorteioController extends AbstractLeitorController {
     
-    public Sorteio(String nome_arquivo)
+    public SorteioController(String nome_arquivo)
     {
         super(nome_arquivo);
         this.leArquivo();

@@ -6,13 +6,13 @@ import br.com.unicarioca.megasena.model.Pessoa;
 import java.util.*;
 import java.util.regex.*;
 
-public class Apostas extends Leitor {
+public class ApostasController extends AbstractLeitorController {
     
-    private final Cadastro cadastro;
+    private final CadastroController cadastro;
     
     private final ArrayList<Aposta> apostas;
     
-    public Apostas(String nome_arquivo, Cadastro cadastro) {
+    public ApostasController(String nome_arquivo, CadastroController cadastro) {
         super(nome_arquivo);
         this.cadastro = cadastro;
         this.apostas = new ArrayList();
@@ -77,7 +77,7 @@ public class Apostas extends Leitor {
         throw new PessoaNaoEncontradaException("CPF não cadastrado: "+documento);
     }
     
-    public void ApuraResultado(Sorteio sorteio) {
+    public void ApuraResultado(SorteioController sorteio) {
         
     }
     

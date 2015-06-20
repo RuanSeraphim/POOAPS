@@ -4,11 +4,11 @@ import br.com.unicarioca.megasena.model.Pessoa;
 import java.util.*;
 import java.util.regex.*;
 
-public class Cadastro extends Leitor {
+public class CadastroController extends AbstractLeitorController {
     
     private final ArrayList<Pessoa> pessoas;
     
-    public Cadastro(String nome_arquivo) {
+    public CadastroController(String nome_arquivo) {
         super(nome_arquivo);
         this.pessoas = new ArrayList(1000);
         this.leArquivo();

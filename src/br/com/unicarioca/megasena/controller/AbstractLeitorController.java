@@ -2,11 +2,11 @@ package br.com.unicarioca.megasena.controller;
 
 import java.io.*;
 
-public abstract class Leitor {
+public abstract class AbstractLeitorController {
     
     protected FileReader arquivo;
     
-    public Leitor(String nome_arquivo) {
+    public AbstractLeitorController(String nome_arquivo) {
         try {
             this.arquivo = new FileReader("lib/"+nome_arquivo);
         } catch (FileNotFoundException e) {
