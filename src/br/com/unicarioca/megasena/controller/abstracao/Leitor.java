@@ -1,7 +1,6 @@
 package br.com.unicarioca.megasena.controller.abstracao;
 
 import java.io.*;
-import java.util.Collection;
 
 public abstract class Leitor {
     
